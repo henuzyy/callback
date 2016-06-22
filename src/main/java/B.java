@@ -6,9 +6,10 @@ import java.util.concurrent.TimeUnit;
 public class B {
 
     public void doHandler(Listener listener){
-        String result = "hello callback function!";
+        String result = "";
         try {
             TimeUnit.SECONDS.sleep(2);
+            result = "hello callback function!";
         } catch (InterruptedException e) {
             e.printStackTrace();
         }finally {
